@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+       El Trile
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,27 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">El Trile</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="contenedor">
+    <div id="box">
+      <ion-icon name="cube" (click)='verCaja(1)'></ion-icon>
+      <ion-icon name="cube" (click)='verCaja(2)'></ion-icon>
+      <ion-icon name="cube" (click)='verCaja(3)'></ion-icon>
+    </div>
+    <div id="ball" *ngIf="ver">
+      <ion-icon *ngIf="ball===1" name="tennisball"></ion-icon>
+      <ion-icon *ngIf="ball!==1" name="blank"></ion-icon>
+      <ion-icon *ngIf="ball===2" name="tennisball"></ion-icon>
+      <ion-icon *ngIf="ball!==2" name="blank"></ion-icon>
+      <ion-icon *ngIf="ball===3" name="tennisball"></ion-icon>
+      <ion-icon *ngIf="ball!==3" name="blank"></ion-icon>
+    </div>
+    <h3>{{mensaje}}</h3>
+    <ion-button (click)="reiniciar()">
+      Reiniciar
+    </ion-button>
   </div>
 </ion-content>

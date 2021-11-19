@@ -1,27 +1,20 @@
-#container {
+#contenedor {
   text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-icon{
+  width: 70px;
+  height: 70px;
+  margin: 30px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-title{
+  text-align: center;
 }
 
-#container a {
-  text-decoration: none;
-}
+
+
+
+
