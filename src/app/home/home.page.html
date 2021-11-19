@@ -28,7 +28,7 @@
       <ion-icon *ngIf="ball!==3" name="blank"></ion-icon>
     </div>
     <h3>{{mensaje}}</h3>
-    <ion-button (click)="reiniciar()">
+    <ion-button *ngIf="ver"  (click)="reiniciar()">
       Reiniciar
     </ion-button>
   </div>
